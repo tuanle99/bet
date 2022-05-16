@@ -20,7 +20,7 @@ import { useNavigate } from "react-router-dom";
 const pages = ["Home", "Bet", "History", "Members"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = () => {
+function NavBar() {
   const navigate = useNavigate();
 
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -192,5 +192,5 @@ const ResponsiveAppBar = () => {
       </Container>
     </AppBar>
   );
-};
-export default ResponsiveAppBar;
+}
+export default NavBar;

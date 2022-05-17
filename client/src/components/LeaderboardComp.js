@@ -21,8 +21,8 @@ function LeaderboardComp() {
     <Box sx={{ flexGrow: 1 }}>
       {listName.map((e) => {
         return (
-          <Grid container spacing={2}>
-            <Grid key={e.id} item xs={12}>
+          <Grid container spacing={2} key={e.id}>
+            <Grid item xs={12}>
               <Item>
                 {e.name} - {e.points}
               </Item>
